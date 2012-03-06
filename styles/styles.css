@@ -1,0 +1,197 @@
+﻿/*Fonts*/
+@font-face {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Ubuntu-Regular"), local("Ubuntu-Regular"), url(/fonts/Ubuntu-Regular.ttf) format(truetype), url("http://fonts.googleapis.com/css?family=Ubuntu:400");
+}
+
+@font-face {
+    font-family: "Ubuntu Light";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Ubuntu-Light"), local("Ubuntu-Light"), url(/fonts/Ubuntu-Light.ttf) format(truetype), url("http://fonts.googleapis.com/css?family=Ubuntu:300");
+}
+
+@font-face {
+    font-family: "Ubuntu Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Ubuntu-Medium"), local("Ubuntu-Medium"), url(/fonts/Ubuntu-Medium.ttf) format(truetype), url("http://fonts.googleapis.com/css?family=Ubuntu:500");
+}
+
+@font-face {
+    font-family: "Ubuntu Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Ubuntu-Bold"), local("Ubuntu-Bold"), url(/fonts/Ubuntu-Bold.ttf) format(truetype), url("http://fonts.googleapis.com/css?family=Ubuntu:700");
+}
+
+/*---*/
+
+body, a, h1, h2, h3, h4, span, ul, li {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background: #879ba4 url(/images/bg.jpg) repeat-x 0 0;
+    color: #fff;
+    font: normal 12px/19px 'Ubuntu', sans-serif;   
+}
+
+a { text-decoration:none; }
+
+ul { list-style:none; }
+
+#content {
+    display:block;
+    height:auto;
+    margin:0 auto;
+    overflow:hidden;
+    width: 1024px;
+}
+
+#leftNav {    
+    float: left;
+    height:570px;
+    width:322px;
+}
+
+#leftNav #logo {
+    background: url(/images/as-bg-logo.jpg) no-repeat 0 0;
+    /*background-color: rgba(161,247,255, 0.5);*/
+    height:200px;
+}
+#logo h2 {        
+    height: 70px;
+    margin: 0 auto;
+    padding: 73px 0 0;
+    width: 270px;
+}
+#logo h2 a {
+    background: transparent url(/images/logo.png) no-repeat 0 0;
+    cursor:pointer;
+    display:inline-block;
+    height:100%;
+    text-decoration:none;
+    width:100%;
+}
+#logo h2 a span {
+    display:none;
+}
+#logo h2 a img {
+    margin:0 auto;
+    width:320px;
+        
+}
+    
+#navigation {
+    background: url(/images/as-bg-leftnav.jpg) no-repeat top left;
+    /*background-color: rgba(0,0,0, 0.44);*/
+    height:100%;
+    margin: 0 auto;
+    padding: 45px 30px 0px;
+}    
+#navigation #msg h3 {
+    font-family: "Ubuntu Medium", sans-serif;
+    font-size:14px;
+    margin:0 0 19px;
+}
+
+#navigation #msg p { margin-bottom:27px; }
+
+#mainContent { margin: 0 0 0 322px; }
+
+#mainContent nav { height:200px; }
+
+#mainContent #followList {
+    display:table;
+    float:right;
+    overflow:hidden;
+    padding: 69px 0 0 0;
+}
+#mainContent #followList li{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+#mainContent #followList li:first-child {
+    height:100%;
+    width:auto;    
+}
+#mainContent #followList li:first-child h4 {
+    font-size:12px;
+    font-weight:normal;
+    margin:0 38px 0 0;
+    /*width:73px;*/
+}
+
+#mainContent #followList li a {
+    /*background-position: 0 1.5px, 1.5px 0.5px;*/
+    display:inline-block;
+    height:40px;
+    margin: 0 25px 0 0;
+    text-decoration:none;
+    width: 40px;
+}
+#mainContent #followList li a span{
+    display:none;
+}
+#mainContent #followList li.fb a  {
+    background: url("/images/icons/Facebook/fb-off.png") no-repeat 1px 3px;
+}
+#mainContent #followList li.fb a:hover {
+    background:url("/images/icons/Facebook/fb-on.png") no-repeat 0px 0px;
+}
+#mainContent #followList li.tw a  {
+    background:url(/images/icons/Twitter/tw-off.png) no-repeat 0px 2px;
+}
+#mainContent #followList li.tw a:hover {
+    background:url(/images/icons/Twitter/tw-on.png) no-repeat 0px 0px;
+}
+#mainContent #followList li.vim a {
+    background:url(/images/icons/Vimeo/vim-off.png)no-repeat 0px 4px;
+}
+#mainContent #followList li.vim a:hover {
+    background:url(/images/icons/Vimeo/vim-on.png) no-repeat 0px 0px;
+}
+#mainContent #followList li.ytb a  {
+    background:url(/images/icons/YouTube/ytb-off.png)no-repeat 1px 2px;
+}
+#mainContent #followList li.ytb a:hover {
+    background:url(/images/icons/YouTube/ytb-on.png) no-repeat 0px 0px;
+}
+#mainContent #followList li.fkr a  {
+    background:url(/images/icons/flickr/fkr-off.png) no-repeat 0px 2px;
+}
+#mainContent #followList li.fkr a:hover {
+    /*background-image:url(/images/icons/flickr/fkr-off.png), url(/images/icons/flickr/fkr-on.png);*/
+    background:url(/images/icons/flickr/fkr-on.png) no-repeat 0px 0px;
+}
+#mainContent #followList li.contact a {
+    background:url(/images/ContactButton.png) no-repeat 0px 0px;
+    height:83px;
+    margin:0;
+    width:80px;
+}
+#mainContent #followList li.contact a:hover {
+    background:url(/images/ContactButton-on.png)  no-repeat 0px 0px;
+}
+
+    
+footer {
+    background: url(/images/footer-bg.jpg) repeat-x 0 0;
+    height: 40px;
+    margin: 39px auto 0;
+    padding:10px 0px;
+    text-align:right;
+    width: 703px;
+}
+footer div  {
+    font-size:13px;
+    padding:0px 20px; 
+}
+footer a { color:#fff; }
+footer a:hover { text-decoration:underline; }
+footer div span.separator { padding:0 14px; }
