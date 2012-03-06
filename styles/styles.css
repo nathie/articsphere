@@ -169,7 +169,7 @@ ul { list-style:none; }
     background:url(/articsphere/images/icons/Vimeo/vim-on.png) no-repeat 0px 0px;
 }
 #mainContent #followList li.ytb a  {
-    background:url(/articsphere/images/icons/YouTube/ytb-off.png)no-repeat 1px 2px;
+    background:url(/articsphere/images/icons/YouTube/ytb-off.png) no-repeat 1px 2px;
 }
 #mainContent #followList li.ytb a:hover {
     background:url(/articsphere/images/icons/YouTube/ytb-on.png) no-repeat 0px 0px;
