@@ -47,9 +47,21 @@ body, a, h1, h2, h3, h4, span, ul, li {
 }
 
 body {
-    background: #879ba4 url(/articsphere/images/bg.jpg) repeat-x 0 0;
+    /*background: rgba(135,155,164, 0.78) url(/articsphere/images/ArcticSphere-Background-2.jpg) repeat-x center top;*/
     color: #fff;
-    font: normal 12px/19px 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu Light', sans-serif;
+    font-size:13px;
+    font-weight:normal;
+    height:100%;
+    width:100%;
+}
+.bg {
+    height:100%;
+    left:0;
+    position:absolute;
+    top:0;
+    width:100%;
+    z-index:-1;
 }
 
 a { text-decoration:none; }
@@ -72,7 +84,6 @@ ul { list-style:none; }
 
 #leftNav #logo {
     background: url(/articsphere/images/as-bg-logo.jpg) no-repeat 0 0;
-    /*background-color: rgba(161,247,255, 0.5);*/
     height:200px;
 }
 #logo h2 {
@@ -99,9 +110,9 @@ ul { list-style:none; }
 }
 
 #navigation {
-    background: url(/articsphere/images/as-bg-leftnav.jpg) no-repeat top left;
-    /*background-color: rgba(0,0,0, 0.44);*/
-    height:100%;
+    /*background: url(/articsphere/images/as-bg-leftnav.jpg) no-repeat top left;*/
+    background-color: rgba(0,0,0, 0.44);
+    height:311px;
     margin: 0 auto;
     padding: 45px 30px 0px;
 }
@@ -136,11 +147,9 @@ ul { list-style:none; }
     font-size:12px;
     font-weight:normal;
     margin:0 38px 0 0;
-    /*width:73px;*/
 }
 
 #mainContent #followList li a {
-    /*background-position: 0 1.5px, 1.5px 0.5px;*/
     display:inline-block;
     height:40px;
     margin: 0 25px 0 0;
@@ -169,17 +178,16 @@ ul { list-style:none; }
     background:url(/articsphere/images/icons/Vimeo/vim-on.png) no-repeat 0px 0px;
 }
 #mainContent #followList li.ytb a  {
-    background:url(/articsphere/images/icons/Youtube/ytb-off.png) no-repeat 1px 2px;
+    background:url(/articsphere/images/icons/YouTube/ytb-off.png)no-repeat 1px 2px;
 }
 #mainContent #followList li.ytb a:hover {
-    background:url(/articsphere/images/icons/Youtube/ytb-on.png) no-repeat 0px 0px;
+    background:url(/articsphere/images/icons/YouTube/ytb-on.png) no-repeat 0px 0px;
 }
 #mainContent #followList li.fkr a  {
     background:url(/articsphere/images/icons/flickr/fkr-off.png) no-repeat 0px 2px;
 }
 #mainContent #followList li.fkr a:hover {
-    /*background-image:url(/articsphere/images/icons/flickr/fkr-off.png), url(/images/icons/flickr/fkr-on.png);*/
-    background:url(/articsphere/images/icons/flickr/fkr-on.png) no-repeat 0px 0px;
+    background:url(/articsphere/images/icons/flickr/fkr-on.png) no-repeat 0px 2px;
 }
 #mainContent #followList li.contact a {
     background:url(/articsphere/images/ContactButton.png) no-repeat 0px 0px;
@@ -191,12 +199,11 @@ ul { list-style:none; }
     background:url(/articsphere/images/ContactButton-on.png)  no-repeat 0px 0px;
 }
 
-
 footer {
     background: url(/articsphere/images/footer-bg.jpg) repeat-x 0 0;
-    height: 40px;
-    margin: 39px auto 0;
-    padding:10px 0px;
+    height: 20px;
+    margin: 40px auto;
+    padding: 12px 0;
     text-align:right;
     width: 703px;
 }

@@ -1,18 +1,20 @@
-﻿<!DOCTYPE>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>ArcticSphere</title>
-    <link href="/articsphere/images/FavIcons-32x32.png" rel="icon" />
-    <link href="/articsphere/styles/styles.css" rel="Stylesheet" />    
+    <title>ArticSphere</title>
+    <link href="/articsphere/images/fav-iconsphere.png" rel="icon" />
+    <link href="/articsphere/styles/styles.css" rel="Stylesheet" />
+    <script type="text/javascript" src="/articsphere/scripts/email.js"></script>
 </head>
 <body>
+    <img class="bg" src="/articsphere/images/ArcticSphere-Background-2.jpg" alt="" />
     <div id="content">
         <aside id="leftNav">
             <header id="logo">
                 <h2>
                     <a href="#">
-                        <span>ArcticSphere</span>                        
+                        <span>ArticSphere</span>
                     </a>
                 </h2>
             </header>
@@ -23,34 +25,37 @@
                         We are a visual arts company from Oslo specializing in film, photography and design.
                     </p>
                     <p>
-                        Our website is currently under construction 
-                        but you are welcome to check back again 
-                        in the future, meanwhile we would love 
-                        for you to take a look at our show-reel.
+                        Our website is currently under construction but you are welcome to check back again
+                        in the future, meanwhile we would love for you to take a look at our show-reel.
                     </p>
                     <p>
-                        If you wish to work with us please 
-                        don’t hesitate to use the contact buttons 
-                        at the top of the page.  
+                        If you wish to work with us please
+                        don’t hesitate to use the contact
+                        buttons at the top of the page.
                     </p>
                 </div>
             </section>
         </aside>
         <div id="mainContent">
-            <nav>                
+            <nav>
                 <ul id="followList">
                     <li><h4>Follow us on:</h4></li>
-                    <li class="fb"><a href="https://www.facebook.com/arcticsphere"><span>Facebook</span></a></li>
-                    <li class="tw"><a href="https://www.twitter.com/arcticsphere"><span>Twitter</span></a></li>
-                    <li class="vim"><a href="http://vimeo.com/user10646881"><span>Vimeo</span></a></li>
-                    <li class="ytb"><a href="http://www.youtube.com/user/arcticsphereFILM"><span>YouTube</span></a></li>
-                    <li class="fkr"><a href="http://www.flickr.com/photos/arcticsphere/"><span>Flickr</span></a></li>
-                    <li class="contact"><a href="mailto:contact@articsphere.net"><span>Contact</span></a></li>
+                    <li class="fb"><a target="_blank" href="https://www.facebook.com/arcticsphere"><span>Facebook</span></a></li>
+                    <li class="tw"><a target="_blank" href="https://www.twitter.com/arcticsphere"><span>Twitter</span></a></li>
+                    <li class="vim"><a target="_blank" href="http://vimeo.com/user10646881"><span>Vimeo</span></a></li>
+                    <li class="ytb"><a target="_blank" href="http://www.youtube.com/user/arcticsphereFILM"><span>YouTube</span></a></li>
+                    <li class="fkr"><a target="_blank" href="http://www.flickr.com/photos/arcticsphere/"><span>Flickr</span></a></li>
+                    <li class="contact">
+                      <script type="text/javascript">
+                        mail2("contact", "articsphere", 2, "", "<span>Contact</span>");
+                      </script>
+                    </li>
                 </ul>
             </nav>
             <section id="video">
                 <div>
                     <iframe width="703" height="356" src="https://www.youtube-nocookie.com/embed/NZcadgpu4F8?rel=0;controls=0;showinfo=0" frameborder="0" allowfullscreen>
+                        <img src="/articsphere/images/Video-Reel.jpg" alt="" />
                     </iframe>
                 </div>
             </section>
@@ -60,9 +65,9 @@
                     <span class="separator">/</span>
                     <span>&#169; Artic Sphere 2012</span>
                 </div>
-            </footer>           
+            </footer>
         </div>
-         
-    </div>        
+
+    </div>
 </body>
 </html>
